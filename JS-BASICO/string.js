@@ -8,7 +8,7 @@ console.log(umaString.charCodeAt(6)); //RETORNA O CODIGO DA LETRA NA TABELA ASCI
 
 console.log(umaString.concat("em", " ", "um"))
 
-console.log(umaString.indexOf("texto")) //RETORNA O INDICE QUE INICIA O TEXTO PROCURADO
+console.log(umaString.indexOf("text")) //RETORNA O INDICE QUE INICIA O TEXTO PROCURADO
 
 console.log(umaString.indexOf("texto", 3)) //RETORNA O INDICE QUE INICIA O TEXTO PROCURADO A PARTIR DE 3
 
@@ -31,3 +31,7 @@ console.log(umaString.split(2));
 console.log(umaString.toLocaleLowerCase());
 
 console.log(umaString.toLocaleUpperCase());
+
+if (0) {
+    console.log("True")
+}
