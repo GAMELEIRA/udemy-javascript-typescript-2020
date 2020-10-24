@@ -1,4 +1,5 @@
-export class Personagem {
+export abstract class Personagem {
+  protected abstract emoji: string;
   constructor(
     protected name: string,
     protected ataque: number,
@@ -16,20 +17,21 @@ export class Personagem {
     this.vida -= forcaAtaque;
   }
 
-  public bordao(): void {
-    console.log('BORDAO');
-  }
+  public abstract bordao(): void;
+
 }
 
 export class Guerreira extends Personagem {
+  protected emoji = '\u{1F9DD}'
   public bordao(): void {
-    console.log('Ao ataque!');
+    console.log('Ao ataque!' + this.emoji);
   }
 }
 
 export class Monstro extends Personagem {
+  protected emoji = '\u{1F9DF}'
   public bordao(): void {
-    console.log('GRRRRRR!');
+    console.log('GRRRRRR!' + this.emoji);
   }
 }
 

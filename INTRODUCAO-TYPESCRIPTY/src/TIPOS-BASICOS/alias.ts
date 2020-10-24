@@ -19,3 +19,7 @@ const pesso: Pessoa = {
   salario: 222000,
   corPreferida: "Ciano"
 };
+
+type Numero = number | string;
+
+type Numero2 = number & string;
