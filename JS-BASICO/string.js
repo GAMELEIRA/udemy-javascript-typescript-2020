@@ -33,5 +33,5 @@ console.log(umaString.toLocaleLowerCase());
 console.log(umaString.toLocaleUpperCase());
 
 if (0) {
-    console.log("True")
+    console.log("True");
 }
